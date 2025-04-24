@@ -1,0 +1,54 @@
+/* style.css */
+
+/* Basic page reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background: #f9fafb;           /* soft light‑gray */
+    color: #111827;                /* near‑black text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Main heading */
+  h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1.5rem;
+    color: #2563eb;                /* blue‑600 */
+    text-align: center;
+  }
+  
+  /* Quote text */
+  p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 40rem;
+    padding: 0 1rem;
+    text-align: center;
+    background: #ffffff;
+    border-left: 4px solid #2563eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+  }
+  
+  /* Nice touch: italicize the quote itself */
+  p::before,
+  p::after {
+    content: "“";
+    font-weight: bold;
+    color: #6b7280;               /* gray‑500 */
+  }
+  
+  p::after {
+    content: "”";
+  }
+  
